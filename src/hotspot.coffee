@@ -7,6 +7,7 @@ config = require './config'
 hostapd = require './hostapd'
 dnsmasq = require './dnsmasq'
 systemd = require './systemd'
+modprobe = require './modprobe'
 
 started = false
 
@@ -20,6 +21,8 @@ exports.start = ->
 
 	systemd.stop('connman.service')
 	.delay(2000)
+	.then ->
+		modprobe.ap()
 	.then ->
 		execAsync('rfkill unblock wifi')
 	.then ->
@@ -39,6 +42,7 @@ exports.stop = ->
 	Promise.all [
 		hostapd.stop()
 		dnsmasq.stop()
+		modprobe.normal()
 	]
 	.then ->
 		systemd.start('connman.service')

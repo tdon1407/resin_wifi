@@ -15,17 +15,17 @@ An example of using WiFi Connect in a Python project can be found [here](https:/
 ## How it works
 ![How it works](./docs/images/how-it-works.png?raw=true)
 
-WiFi Connect interacts with Network Manager, which runs in the device's host OS. It opens an access point if a WiFi connection cannot be made, and connecting to this access point with a laptop or mobile phone allows new WiFi credentials to be configured.
+WiFi Connect interacts with NetworkManager, which runs in the device's host OS. If a WiFi connection cannot be made it scans for available WiFi networks ➀ and opens an access point with a captive portal ➁. Connecting to this access point with a laptop or mobile phone allows new WiFi credentials to be configured.
 
 The access point SSID is, by default, `ResinAP`. It can be changed by setting the `PORTAL_SSID` environment variable (see [this guide](https://docs.resin.io/management/env-vars/) for how to manage environment variables). By default, the network is unprotected, but a WPA2 passphrase can be added by setting the `PORTAL_PASSPHRASE` environment variable.
 
-After connecting to the access point, any web page will redirect to the captive portal, which provides the option to select a WiFi SSID and passphrase. When these have been entered, WiFi Connect will disable the access point and try to connect to the network. If the connection fails, it will enable the access point for another attempt. If it succeeds, the configuration will be saved by Network Manager.
+After connecting to the access point ➂, any web page will redirect to the captive portal, which provides the option to select a WiFi SSID and passphrase ➃. When these have been entered, WiFi Connect will disable the access point and try to connect to the network. If the connection fails, it will enable the access point for another attempt. If it succeeds, the configuration will be saved by NetworkManager ➄.
 
 By default, WiFi Connect will not attempt to enter access point mode if a successful network connection has been made before. If the device is moved to a new network, it will continue trying to connect to the previous network. The user application is responsible for specifying an appropriate condition for returning to access point mode. This could be "offline for more than 1 day", "user pushed the reset button", or any other actionable state. To re-enter access point mode, the application should run the command `resin-wifi-connect --clear=true`.
 
 For a complete list of command line arguments and environment variables check out our [command line arguments](./docs/command-line-arguments.md) guide.
 
-The full application flow is described in the following ![state flow diagram](./docs/images/flow.png?raw=true).
+The full application flow is illustrated in the [state flow diagram](./docs/state-flow-diagram.md).
 
 
 ## Supported boards / dongles
@@ -41,7 +41,7 @@ It has also been successfully tested with the onboard WiFi on a Raspberry Pi 3.
 
 Given these results, it is probable that most dongles with *Atheros* or *Ralink* chipsets will work.
 
-The following dongles are known **not** to work (as the driver is not friendly with access point mode or Network Manager):
+The following dongles are known **not** to work (as the driver is not friendly with access point mode or NetworkManager):
 
 * Official Raspberry Pi dongle (BCM43143 chip)
 * Addon NWU276 (Mediatek MT7601 chip)

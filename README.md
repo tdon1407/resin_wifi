@@ -11,7 +11,7 @@ WiFi Connect is a utility for dynamically setting the WiFi configuration on a Li
 [![GitHub All Releases](https://img.shields.io/github/downloads/resin-io/resin-wifi-connect/total.svg?style=flat-square)](https://github.com/resin-io/resin-wifi-connect/releases/latest)
 
 <div align="center">
-  <sub>an open source project by <a href="https://resin.io">resin.io</a></sub>
+  <sub>an open source :satellite: project by <a href="https://resin.io">resin.io</a></sub>
 </div>
 
 ***

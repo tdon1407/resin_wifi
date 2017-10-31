@@ -34,7 +34,7 @@ Most command line options have environment variable counterpart. If both a comma
 
     Portal SSID
 
-    Default: _ResinAP_
+    Default: _WiFi Connect_
 
 *   **-t, --timeout** timeout, **$CONNECT_TIMEOUT**
 

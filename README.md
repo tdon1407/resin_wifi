@@ -52,7 +52,7 @@ When these have been entered, WiFi Connect will disable the access point and try
 
 ---
 
-By default, WiFi Connect will not attempt to enter access point mode if a successful network connection has been made before. If the device is moved to a new network, it will continue trying to connect to the previous network. The user application is responsible for specifying an appropriate condition for returning to access point mode. This could be "offline for more than 1 day", "user pushed the reset button", or any other actionable state. To re-enter access point mode, the application should run the command `resin-wifi-connect --clear=true`.
+By default, WiFi Connect will not attempt to enter access point mode if a successful network connection has been made before. If the device is moved to a new network, it will continue trying to connect to the previous network. The user application is responsible for specifying an appropriate condition for returning to access point mode. This could be "offline for more than 1 day", "user pushed the reset button", or any other actionable state. To re-enter access point mode, the application should run the command `wifi-connect --clear=true`.
 
 For a complete list of command line arguments and environment variables check out our [command line arguments](./docs/command-line-arguments.md) guide.
 

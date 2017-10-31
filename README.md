@@ -28,25 +28,25 @@ How it works
 
 WiFi Connect interacts with NetworkManager, which should be the active network manager on the device's host OS.
 
-#### 1. Scan
+### 1. Scan
 
-If a WiFi connection cannot be made WiFi connect scans for available WiFi networks.
+If a connection cannot be made WiFi connect scans for available WiFi networks.
 
-#### 2. Captive Portal
+### 2. Captive Portal
 
 WiFi Connect opens an access point with a captive portal. Connecting to this access point with a laptop or mobile phone allows new WiFi credentials to be configured.
 
 The access point SSID is, by default, `WiFi Connect`. It can be changed by setting the `PORTAL_SSID` environment variable (see [this guide](https://docs.resin.io/management/env-vars/) for how to manage environment variables). By default, the network is unprotected, but a WPA2 passphrase can be added by setting the `PORTAL_PASSPHRASE` environment variable.
 
-#### 3. Connect
+### 3. Connect
 
 Connect to the opened access point on the device from your mobile phone or laptop. After connecting to the access point from a mobile phone, it will detect the captive portal and open its web page. Opening any web page will redirect to the captive portal as well.
 
-#### 4. Credentials
+### 4. Credentials
 
 The captive portal provides the option to select a WiFi SSID and passphrase.
 
-#### 5. Internet
+### 5. Internet
 
 When these have been entered, WiFi Connect will disable the access point and try to connect to the network. If the connection fails, it will enable the access point for another attempt. If it succeeds, the configuration will be saved by NetworkManager.
 

@@ -9,7 +9,7 @@ WiFi Connect is a utility for dynamically setting the WiFi configuration on a Li
 [![CircleCI status](https://img.shields.io/circleci/project/github/resin-io/resin-wifi-connect.svg?style=flat-square)](https://circleci.com/gh/resin-io/resin-wifi-connect)
 [![License](https://img.shields.io/github/license/resin-io/resin-wifi-connect.svg?style=flat-square)](https://github.com/resin-io/resin-wifi-connect/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/resin-io/resin-wifi-connect.svg?style=flat-square)](https://github.com/resin-io/resin-wifi-connect/issues)
-![Stars](https://img.shields.io/github/stars/resin-io/resin-wifi-connectt.svg?style=flat-square)
+![Stars](https://img.shields.io/github/stars/resin-io/resin-wifi-connect.svg?style=flat-square)
 
 <div align="center">
   <sub>an open source :satellite: project by <a href="https://resin.io">resin.io</a></sub>

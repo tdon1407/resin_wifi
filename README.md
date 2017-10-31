@@ -9,7 +9,7 @@ WiFi Connect is a utility for dynamically setting the WiFi configuration on a Li
 [![CircleCI status](https://img.shields.io/circleci/project/github/resin-io/resin-wifi-connect.svg?style=flat-square)](https://circleci.com/gh/resin-io/resin-wifi-connect)
 [![License](https://img.shields.io/github/license/resin-io/resin-wifi-connect.svg?style=flat-square)](https://github.com/resin-io/resin-wifi-connect/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/resin-io/resin-wifi-connect.svg?style=flat-square)](https://github.com/resin-io/resin-wifi-connect/issues)
-![Stars](https://img.shields.io/github/license/resin-io/resin-wifi-connect.svg?style=flat-square)
+![Stars](https://img.shields.io/github/stars/resin-io/resin-wifi-connectt.svg?style=flat-square)
 
 <div align="center">
   <sub>an open source :satellite: project by <a href="https://resin.io">resin.io</a></sub>
@@ -17,7 +17,7 @@ WiFi Connect is a utility for dynamically setting the WiFi configuration on a Li
 
 ***
 
-[**Download**][DOWNLOAD-LATEST] | [**Support**][#support] | [**Documentation**][USER-DOCUMENTATION] | [**Contributing**][CONTRIBUTING] | [**Roadmap**][MILESTONES] | [**CLI**][CLI]
+[**Download**][DOWNLOAD-LATEST] | [**Support**](#support) | [**Documentation**][USER-DOCUMENTATION] | [**Contributing**][CONTRIBUTING] | [**Roadmap**][MILESTONES] | [**CLI**][CLI]
 
 [DOWNLOAD-LATEST]: https://github.com/resin-io/resin-wifi-connect/releases/latest
 [USER-DOCUMENTATION]: https://github.com/resin-io/resin-wifi-connect
@@ -86,12 +86,12 @@ WiFi Connect is expected to work with all resin.io supported boards as long as t
 Support
 -------
 
-If you're having any problem, please [raise an issue][https://github.com/resin-io/resin-wifi-connect/issues/new] on GitHub or [contact us](https://resin.io/community/), and the resin.io team will be happy to help.
+If you're having any problem, please [raise an issue](https://github.com/resin-io/resin-wifi-connect/issues/new) on GitHub or [contact us](https://resin.io/community/), and the resin.io team will be happy to help.
 
 ***
 
 License
 -------
 
-Etcher is free software, and may be redistributed under the terms specified in
-the [license].
+WiFi Connect is free software, and may be redistributed under the terms specified in
+the [license](https://github.com/resin-io/resin-wifi-connect/blob/master/LICENSE).
